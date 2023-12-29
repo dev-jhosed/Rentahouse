@@ -1,0 +1,3 @@
+Monserrat, Regular
+Monserrat, SemiBold
+Monserrat, Medium

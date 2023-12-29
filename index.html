@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentahouse</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="navbar-logo">
+                <h1>Janine</h1>
+            </div>
+            <div id="navbar-links">
+                <a class="navbar-link" href="#inicio">Inicio</a>
+                <a class="navbar-link" href="#servicios">Servicios</a>
+                <a class="navbar-link" href="#app">App</a>
+                <a class="navbar-link" href="#footer">About</a>
+                <button id="navbar-button">Login</button>
+            </div>
+        </nav>
+    </header>
+    <main id="wrapper">
+
+
+        <!-- ===================INICIO==================== -->
+        <section id="inicio">
+            <div id="inicio-info">
+                <h2>Renta con nosotros y Valora tú mismo</h2>
+                <p>Más de 10000 sitios disponibles en este momento, <a>visítalos!</a></p>
+                <div id="inicio-search">
+                    <div class="inicio-search-field field1">
+                        <p>Dónde buscar</p>
+                        <select class="inicio-search-field-select" name="inicio-search-donde" id="inicio-search-donde">
+                            <option value="" disabled selected>A dónde ir...</option>
+                        </select>
+                    </div>
+                    <div class="inicio-search-field">
+                        <p>Fecha de alquiler</p>
+                        <input class="inicio-search-field-select"  type="date" placeholder="DD MMMM" value="12/12/2023">
+                    </div>
+                    <div class="inicio-search-field">
+                        <p>Retorno</p>
+                        <input class="inicio-search-field-select" type="date" placeholder="01/12/2024">
+                    </div>
+                    <button id="inicio-search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>BUSCAR</p>
+                    </button>
+                </div>
+                <div id="inicio-info-info">
+                    <p>4.8/5.</p>
+                    <div id="inicio-info-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Por más de 14.520 clientes</p>
+                </div>
+            </div>
+            <div id="inicio-image">
+                <img src="images/img_1.png">
+            </div>
+        </section>
+
+
+        <!-- ===================SERVICIOS==================== -->
+        <section id="servicios">
+            <h3>Alquileres recomendados</h3>
+            <p>A continuación te mostraremos una serie de alquileres que recomendamos aquí en Loremipsum.com</p>
+            <div id="servicios-chips">
+                <a class="chip">Todos</a>
+                <a class="chip">
+                    <i class="fa-solid fa-house"></i>
+                    Casas
+                </a>
+                <a class="chip">
+                    <i class="fa-solid fa-house"></i>
+                    Apartamento
+                </a>
+                <a class="chip">
+                    <i class="fa-solid fa-house"></i>
+                    Habitación
+                </a>
+                <a class="chip">
+                    <i class="fa-solid fa-house"></i>
+                    Casa de campo
+                </a>
+                <a class="chip">20+</a>
+            </div>
+            <div id="servicios-posts">
+                <div class="post">
+                    <img class="post-img" src="images/depto1.jpg">
+                    <h4 class="post-title">Casa de campo en Alcoy</h4>
+                    <p class="post-desc">Hermosísima casa de campo en Alcoy aprovecha esta oportunidad para visitar con tus amigos y familia.</p>
+                    <div class="post-info">
+                        <p class="post-price">$38,54 <span>/ Día</span></p>
+                        <div class="post-visit">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Visitar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img class="post-img" src="images/depto2.jpg">
+                    <h4 class="post-title">Casa de campo en Alcoy</h4>
+                    <p class="post-desc">Hermosísima casa de campo en Alcoy aprovecha esta oportunidad para visitar con tus amigos y familia.</p>
+                    <div class="post-info">
+                        <p class="post-price">$38,54 <span>/ Día</span></p>
+                        <div class="post-visit">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Visitar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img class="post-img" src="images/depto3.jpg">
+                    <h4 class="post-title">Casa de campo en Alcoy</h4>
+                    <p class="post-desc">Hermosísima casa de campo en Alcoy aprovecha esta oportunidad para visitar con tus amigos y familia.</p>
+                    <div class="post-info">
+                        <p class="post-price">$38,54 <span>/ Día</span></p>
+                        <div class="post-visit">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Visitar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="servicios-info">
+                <div id="servicios-info-info">
+                    <p id="servicios-info-results">3.323 resultados</p>
+                    <p id="servicios-info-text">escoge una categoría que busques</p>
+                </div>
+                <div id="servicios-info-nav">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================APP==================== -->
+        <section id="app">
+            <div id="app-info">
+                <h6 id="app-download">Descarga nuestra app en iOS & Android</h6>
+                <h3 id="app-title">Alquila desde donde sea que te encuentres</h3>
+                <p id="app-desc">Obtén ahora nuestra aplicación y visítanos desde donde sea que te encuentres en cualquier momento</p>
+                <div class="app-apps">
+                    <a href="" class="app-apps-app">
+                        <div class="app-apps-icon">
+                            <img src="images/playstore.svg">
+                        </div>
+                        <div class="app-app-info">
+                            <p class="app-app-msg">GET IT ON</p>
+                            <p class="app-app-name">Google Play</p>
+                        </div>
+                    </a>
+                    <a href="" class="app-apps-app">
+                        <div class="app-apps-icon">
+                            <img src="images/apple.svg">
+                        </div>
+                        <div class="app-app-info">
+                            <p class="app-app-msg">Download on the</p>
+                            <p class="app-app-name">AppStore</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="app-img">
+                <img src="images/img_5.png">
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer id="footer">
+        <div id="footer-card">
+            <h4 id="footer-card-title">Suscríbete a nuestro Newsletter</h4>
+            <p id="footer-card-text">Te estaremos enviando nuestro Newsletter a tu correo</p>
+            <div id="footer-card-subscribe">
+                <input type="email" name="email" id="footer-card-subscribe-email">
+                <button type="submit" id="footer-card-subscribe-button">Suscribirse</button>
+            </div>
+            <p id="footer-card-subscribe-desc">Conviértete en parte de nuestra <span id="footer-card-subscribe-link">comunidad en crecimiento</span></p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="4" d="M0,128L60,112C120,96,240,64,360,48C480,32,600,32,720,58.7C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <div id="footer-bottom">
+            <div id="footer-info">
+                <h2>Rentahouse</h2>
+                <p>Address 12521. Str1222</p>
+                <p>Chile, LA</p>
+                <div class="app-apps">
+                    <a href="" class="app-apps-app">
+                        <div class="app-apps-icon">
+                            <img src="images/playstore.svg">
+                        </div>
+                        <div class="app-app-info">
+                            <p class="app-app-msg">GET IT ON</p>
+                            <p class="app-app-name">Google Play</p>
+                        </div>
+                    </a>
+                    <a href="" class="app-apps-app">
+                        <div class="app-apps-icon">
+                            <img src="images/apple.svg">
+                        </div>
+                        <div class="app-app-info">
+                            <p class="app-app-msg">Download on the</p>
+                            <p class="app-app-name">AppStore</p>
+                        </div>
+                    </a>
+                </div>
+                <div id="footer-sm">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div id="footer-links">
+                <a href="" class="footer-links-link">Principal</a>
+                <a href="" class="footer-links-link">Home</a>
+                <a href="" class="footer-links-link">Proceso</a>
+                <a href="" class="footer-links-link">Recomendados</a>
+                <a href="" class="footer-links-link">App</a>
+                <a href="" class="footer-links-link">Reseñas</a>
+                <a href="" class="footer-links-link">Suscribirse</a>
+                <a href="" class="footer-links-link">Categorías</a>
+                <a href="" class="footer-links-link">Casas</a>
+                <a href="" class="footer-links-link">Apartamentos</a>
+                <a href="" class="footer-links-link">Casa de campo</a>
+                <a href="" class="footer-links-link">Habitación</a>
+                <a href="" class="footer-links-link">Penthouse</a>
+                <a href="" class="footer-links-link">Plataforma</a>
+                <a href="" class="footer-links-link">Iniciar sesión</a>
+                <a href="" class="footer-links-link">Registrarse</a>
+                <a href="" class="footer-links-link">Términos y condiciones</a>
+                <a href="" class="footer-links-link">Política de privacidad</a>
+                <a href="" class="footer-links-link">Aviso legal</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

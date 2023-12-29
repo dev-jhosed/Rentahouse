@@ -1,0 +1,8 @@
+violeta primario #5738FC
+blanco #FFFFFF
+fuente #282A36
+fuente gris #6E6E6E
+amarillo terciario #F3CA56
+celeste secundario #4AB3BB
+gris botones #263238
+gris fondo #FDFDFD

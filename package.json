@@ -1,0 +1,13 @@
+{
+  "name": "rentahouse",
+  "version": "1.0.0",
+  "description": "without description",
+  "scripts": {
+    "buildCss": "tailwindcss -i ./globalStyles.css -o ./src/styles.css --watch"
+  },
+  "author": "shizudev",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "3.4.0"
+  }
+}

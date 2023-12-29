@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="!scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../public/logo.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>RentaHouse</title>
+</head>
+<body>
+  <main class="px-20">
+    <!--Navbar-->
+    <nav class="flex w-full h-24 justify-between items-center">
+      <div>
+        <h2 class="text-xl font-bold">Janine</h2>
+      </div>
+      <div class="flex gap-9 items-center">
+        <li>
+          <a href="#start">Inicio</a>
+        </li>
+        <li>
+          <a href="#services">Servicios</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#announcement">Anuncios</a>
+        </li>
+        <li>
+          <a href="/login" class="border border-violet-400 rounded-3xl py-4 px-16 bg-gray-100 text-violet-500">Login</a>
+        </li>
+      </div>
+    </nav>
+
+    <!--Principal-->
+    <section id="start" class="grid grid-cols-2 gap-x-20 items-center w-full my-16">
+      <div class="max-w-sm">
+        <h2 class="text-3xl mb-5 max-w-80">Renta con nosotros y Valora tu mismo</h2>
+        <p class="mb-5">Más de 1000 sitios disponibles en este momento, <a href="#" class="text-blue-900">visitalos!</a></p>
+        <article class="flex flex-col w-max h-48 justify-around w-xl shadow-xl border rounded-lg p-7">
+          <div class="flex gap-4">
+            <span>Dónde buscar</span>
+            <span>Fecha de alquiler</span>
+            <span>Retorno</span>
+          </div>
+          <div class="flex gap-4">
+            <select name="visitalos" class="bg-white text-black shadow-sm shadow-gray-600 rounded-md" id="visitalos">
+              <option selected disabled>A donde ir...</option>
+            </select>
+            <input type="date" class="border shadow-sm shadow-gray-600 bg-white rounded-md">
+            <input type="date" class="bg-white text-black shadow-sm shadow-gray-600 rounded-md">
+            <input type="button" class="bg-violet-700 text-white py-3 px-10 rounded-md" value="Buscar">
+          </div>
+        </article>
+        <p class="mt-5">
+          4.8/5.0 
+          <i class="fa-solid fa-star text-yellow-500"></i>
+          <i class="fa-solid fa-star text-yellow-500"></i>
+          <i class="fa-solid fa-star text-yellow-500"></i>
+          <i class="fa-solid fa-star text-yellow-500"></i>
+          <i class="fa-solid fa-star text-yellow-500"></i>
+           Por más de 14.520 clientes
+        </p>
+      </div>
+      <div class="flex h-auto w-full justify-center">
+        <img src="../public/img_1.png" alt="Log" class="w-fit"/>
+      </div>
+    </section>
+
+    <!--Alquileres-->
+    <section id="services" class="flex flex-col w-full h-screen">
+      <div class="flex flex-col w-full h-20 justify-center items-center gap-6">
+        <h3 class="text-2xl">Alquileres recomendados</h3>
+        <p class="text-center w-2/5">
+          A continuación te mostraremos una serie de alquileres que recomendamos aca en LoremIpsum.com
+        </p>
+      </div>
+      <div class="flex justify-center text-center m-10 gap-4">
+        <a href="#" class="border border-black rounded-full px-9 py-4 hover:bg-violet-600 hover:text-white">Todos</a>
+        <a href="#" class="border border-black rounded-full px-9 py-4 hover:bg-violet-600 hover:text-white">
+          <i class="fa-solid fa-house"></i>
+          Casas</a>
+        <a href="#" class="border border-black rounded-full px-9 py-4 hover:bg-violet-600 hover:text-white">
+          <i class="fa-solid fa-house"></i>
+          Apartamento</a>
+        <a href="#" class="border border-black rounded-full px-9 py-4 hover:bg-violet-600 hover:text-white">
+          <i class="fa-solid fa-house"></i>
+          Habitación</a>
+        <a href="#" class="border border-black rounded-full px-9 py-4 hover:bg-violet-600 hover:text-white">
+          <i class="fa-solid fa-house"></i>
+          Casa de campo</a>
+        <a href="#" class="border border-black rounded-full px-9 py-4 hover:bg-violet-600 hover:text-white">+20</a>
+      </div>
+      <div class="grid grid-cols-3 w-full h-auto">
+        <article class="flex flex-col w-80 h-auto pb-5 shadow-lg rounded-lg justify-self-center hover:scale-110 transition-all duration-150">
+          <img src="../public/depto1.jpg" class="w-full h-2/4 rounded-t-lg">
+          <h3 class="px-6 py-4 font-semibold">Casa de campo en Alcoy</h3>
+          <p class="px-6 font-light mb-3">Hermosisima casa de campo en Alcoy, aprovecha esta oportunidad para pasar tiempo con tus amigos y familia</p>
+          <p class="px-6">
+            <span class="font-bold text-2xl">$38,54</span> /Día
+            <a href="#" class="text-blue-900 cursor-pointer ml-20">
+              <i class="fa-solid fa-house"></i>
+              Visitar
+            </a>
+          </p>
+        </article>
+        <article class="flex flex-col w-80 h-auto pb-5 shadow-lg rounded-lg justify-self-center hover:scale-110 transition-all duration-150">
+          <img src="../public/depto2.jpg" class="w-full h-2/4 rounded-t-lg">
+          <h3 class="px-6 py-4 font-semibold">Casa de campo en Alcoy</h3>
+          <p class="px-6 font-light mb-3">Hermosisima casa de campo en Alcoy, aprovecha esta oportunidad para pasar tiempo con tus amigos y familia</p>
+          <p class="px-6">
+            <span class="font-bold text-2xl">$38,54</span> /Día
+            <a href="#" class="text-blue-900 cursor-pointer ml-20">
+              <i class="fa-solid fa-house"></i>
+              Visitar
+            </a>
+          </p>
+        </article>
+        <article class="flex flex-col w-80 h-auto pb-5 shadow-lg rounded-lg justify-self-center hover:scale-110 transition-all duration-150">
+          <img src="../public/depto3.jpg" class="w-full h-2/4 rounded-t-lg">
+          <h3 class="px-6 py-4 font-semibold">Casa de campo en Alcoy</h3>
+          <p class="px-6 font-light mb-3">Hermosisima casa de campo en Alcoy, aprovecha esta oportunidad para pasar tiempo con tus amigos y familia</p>
+          <p class="px-6 w-full">
+            <span class="font-bold text-2xl">$38,54</span> /Día
+            <a href="#" class="text-blue-900 cursor-pointer ml-20">
+              <i class="fa-solid fa-house"></i>
+              Visitar
+            </a>
+          </p>
+        </article>
+        </div>
+        <footer class="grid grid-cols-2 w-full mt-10">
+          <div class="ml-10">
+            <span class="text-cyan-300">3.323 Resultados</span> escoge una categoría que busques
+          </div>
+          <div class="flex justify-end mr-10 gap-5">
+            <i class="fa-solid fa-angle-left cursor-pointer text-2xl"></i>
+            <i class="fa-solid fa-angle-right cursor-pointer text-2xl"></i>
+          </div>
+        </footer>
+    </section>
+
+    <!--Descarga-->
+    <section id="about" class="grid grid-cols-2 mt-10 w-full h-screen">
+      <div class="w-full m-auto max-w-md text-left">
+        <span class="font-semibold">Descarga nuestra app en iOs & Android</span>
+        <h3 class="text-xl mt-4">Alquila desde donde sea que te encuentres</h3>
+        <span class="font-light">Obtén nuestra aplicación y visitanos desde donde sea que te encuentres en cualquier momento</span>
+        <div class="flex gap-10 mt-5">
+          <a class="flex gap-2 bg-gray-900 p-3 text-white w-64 rounded-md cursor-pointer">
+            <img src="../public/Playstore logo.png" alt="Play store" class="w-8">
+            <p class="text-sm">GET IN ON<br> <span class="text-xl">Google Play</span></p>
+          </a>
+          <a class="flex gap-2 bg-gray-900 p-3 text-white w-64 rounded-md cursor-pointer">
+            <img src="../public/app store logo.png" alt="App Store" class="w-8">
+            <p class="text-sm">Download on the<br> <span class="text-xl">AppStore</span></p>
+          </a>
+        </div>
+      </div>
+      <div class="m-auto">
+        <img src="../public/img_5.png" class="w-11/12"/>
+      </div>
+    </section>
+
+    <!--Pie de pagina-->
+    <footer id="announcement" class="grid w-full h-screen">
+      <article class="flex flex-col m-auto shadow-2xl p-10 rounded-md">
+        <h3 class="font-semibold text-2xl justify-self-center mb-4 m-auto">Suscribete a nuestro Newsletter</h3>
+        <p class="mb-4 m-auto">Te estaremos enviando nuestro NewsLetter a tu correo</p>
+        <form method="post" class="border border-violet-700 rounded-lg px-8">
+          <input type="email" name="Email" placeholder="Ingresa tu dirección de correo electrónico" required class="bg-transparent w-96 p-10"/>
+          <button type="submit" class="py-5 px-20 text-white bg-violet-700 rounded-lg">Suscribirse</button>
+        </form>
+        <p class="m-auto mt-4">Convierte en parte de nuestra <a href="#" class="text-blue-900">Comunidad en crecimiento</a></p>
+      </article>
+      <div class="grid grid-cols-2">
+        <div class="">
+          <h4 class="font-bold text-lg text-white">Rentahouse</h4>
+          <span>Address 12521, S1r1222</span>
+          <br>
+          <span>Chile, LA</span>
+          <div class="flex gap-4 mt-5">
+            <a class="flex gap-2 bg-gray-900 p-3 text-white w-64 rounded-md cursor-pointer">
+              <img src="../public/Playstore logo.png" alt="Play store" class="w-8">
+              <p class="text-sm">GET IN ON<br> <span class="text-xl">Google Play</span></p>
+            </a>
+            <a class="flex gap-2 bg-gray-900 p-3 text-white w-64 rounded-md cursor-pointer">
+              <img src="../public/app store logo.png" alt="App Store" class="w-8">
+              <p class="text-sm">Download on the<br> <span class="text-xl">AppStore</span></p>
+            </a>
+          </div>
+          <a href="#" class="">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div class="grid grid-cols-3 grid-rows-7 ">
+          <a href="#" class="footer-links-link">Principal</a>
+          <a href="#" class="footer-links-link">Home</a>
+          <a href="#" class="footer-links-link">Proceso</a>
+          <a href="#" class="footer-links-link">Recomendados</a>
+          <a href="#" class="footer-links-link">App</a>
+          <a href="#" class="footer-links-link">Reseñas</a>
+          <a href="#" class="footer-links-link">Suscribirse</a>
+          <a href="#" class="footer-links-link">Categorías</a>
+          <a href="#" class="footer-links-link">Casas</a>
+          <a href="#" class="footer-links-link">Apartamentos</a>
+          <a href="#" class="footer-links-link">Casa de campo</a>
+          <a href="#" class="footer-links-link">Habitación</a>
+          <a href="#" class="footer-links-link">Penthouse</a>
+          <a href="#" class="footer-links-link">Plataforma</a>
+          <a href="#" class="footer-links-link">Iniciar sesión</a>
+          <a href="#" class="footer-links-link">Registrarse</a>
+          <a href="#" class="footer-links-link">Términos y condiciones</a>
+          <a href="#" class="footer-links-link">Política de privacidad</a>
+          <a href="#" class="footer-links-link">Aviso legal</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://kit.fontawesome.com/723d9a1fa7.js" crossorigin="anonymous"></script>
+</body>
+</html>
