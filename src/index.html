@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./styles.css" />
   <title>RentaHouse</title>
 </head>
-<body>
+<body class="min-h-screen">
   <main class="px-20">
     <!--Navbar-->
     <nav class="flex w-full h-24 justify-between items-center">
@@ -50,7 +50,7 @@
             </select>
             <input type="date" class="border shadow-sm shadow-gray-600 bg-white rounded-md">
             <input type="date" class="bg-white text-black shadow-sm shadow-gray-600 rounded-md">
-            <input type="button" class="bg-violet-700 text-white py-3 px-10 rounded-md" value="Buscar">
+            <input type="button" class="bg-violet-700 text-white py-3 px-10 rounded-md hover:scale-110 duration-150" value="Buscar">
           </div>
         </article>
         <p class="mt-5">
@@ -135,8 +135,8 @@
             <span class="text-cyan-300">3.323 Resultados</span> escoge una categoría que busques
           </div>
           <div class="flex justify-end mr-10 gap-5">
-            <i class="fa-solid fa-angle-left cursor-pointer text-2xl"></i>
-            <i class="fa-solid fa-angle-right cursor-pointer text-2xl"></i>
+            <i class="fa-solid fa-angle-left cursor-pointer text-2xl hover:scale-110 duration-150"></i>
+            <i class="fa-solid fa-angle-right cursor-pointer text-2xl hover:scale-110 duration-150"></i>
           </div>
         </footer>
     </section>
@@ -162,71 +162,79 @@
         <img src="./assets/img_5.png" class="w-11/12"/>
       </div>
     </section>
-
-    <!--Pie de pagina-->
-    <footer id="announcement" class="grid w-full h-screen">
-      <article class="flex flex-col m-auto shadow-2xl p-10 rounded-md">
-        <h3 class="font-semibold text-2xl justify-self-center mb-4 m-auto">Suscribete a nuestro Newsletter</h3>
-        <p class="mb-4 m-auto">Te estaremos enviando nuestro NewsLetter a tu correo</p>
-        <form method="post" class="border border-violet-700 rounded-lg px-8">
-          <input type="email" name="Email" placeholder="Ingresa tu dirección de correo electrónico" required class="bg-transparent w-96 p-10"/>
-          <button type="submit" class="py-5 px-20 text-white bg-violet-700 rounded-lg">Suscribirse</button>
-        </form>
-        <p class="m-auto mt-4">Convierte en parte de nuestra <a href="#" class="text-blue-900">Comunidad en crecimiento</a></p>
-      </article>
-      <div class="grid grid-cols-2">
-        <div class="">
-          <h4 class="font-bold text-lg text-white">Rentahouse</h4>
-          <span>Address 12521, S1r1222</span>
-          <br>
-          <span>Chile, LA</span>
-          <div class="flex gap-4 mt-5">
-            <a class="flex gap-2 bg-gray-900 p-3 text-white w-64 rounded-md cursor-pointer">
-              <img src="./assets/playstore.png" alt="Play store" class="w-8">
-              <p class="text-sm">GET IN ON<br> <span class="text-xl">Google Play</span></p>
-            </a>
-            <a class="flex gap-2 bg-gray-900 p-3 text-white w-64 rounded-md cursor-pointer">
-              <img src="./assets/appstore.png" alt="App Store" class="w-8">
-              <p class="text-sm">Download on the<br> <span class="text-xl">AppStore</span></p>
-            </a>
-          </div>
-          <a href="#" class="">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="#" class="">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="#" class="">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#" class="">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </div>
-        <div class="grid grid-cols-3 grid-rows-7 ">
-          <a href="#" class="footer-links-link">Principal</a>
-          <a href="#" class="footer-links-link">Home</a>
-          <a href="#" class="footer-links-link">Proceso</a>
-          <a href="#" class="footer-links-link">Recomendados</a>
-          <a href="#" class="footer-links-link">App</a>
-          <a href="#" class="footer-links-link">Reseñas</a>
-          <a href="#" class="footer-links-link">Suscribirse</a>
-          <a href="#" class="footer-links-link">Categorías</a>
-          <a href="#" class="footer-links-link">Casas</a>
-          <a href="#" class="footer-links-link">Apartamentos</a>
-          <a href="#" class="footer-links-link">Casa de campo</a>
-          <a href="#" class="footer-links-link">Habitación</a>
-          <a href="#" class="footer-links-link">Penthouse</a>
-          <a href="#" class="footer-links-link">Plataforma</a>
-          <a href="#" class="footer-links-link">Iniciar sesión</a>
-          <a href="#" class="footer-links-link">Registrarse</a>
-          <a href="#" class="footer-links-link">Términos y condiciones</a>
-          <a href="#" class="footer-links-link">Política de privacidad</a>
-          <a href="#" class="footer-links-link">Aviso legal</a>
-        </div>
-      </div>
-    </footer>
   </main>
+
+  <!--Pie de pagina-->
+
+  <div class="grid translate-y-52">
+    <article class="flex flex-col m-auto shadow-xl p-10 rounded-md bg-white z-10">
+      <h3 class="font-semibold text-2xl justify-self-center mb-4 m-auto">Suscribete a nuestro Newsletter</h3>
+      <p class="mb-4 m-auto">Te estaremos enviando nuestro NewsLetter a tu correo</p>
+      <form method="post" class="border border-violet-700 rounded-lg px-8">
+        <input type="email" name="Email" placeholder="Ingresa tu dirección de correo electrónico" required class="bg-transparent w-96 p-10"/>
+        <button type="submit" class="py-5 px-20 text-white bg-violet-700 rounded-lg hover:scale-110 duration-150">Suscribirse</button>
+      </form>
+      <p class="m-auto mt-4">Convierte en parte de nuestra <a href="#" class="text-blue-900">Comunidad en crecimiento</a></p>
+    </article>
+  </div>
+
+  <footer id="announcement" class="grid w-full h-auto">
+    <svg class="-z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#5000ca" fill-opacity="1" d="M0,64L40,53.3C80,43,160,21,240,26.7C320,32,400,64,480,112C560,160,640,224,720,256C800,288,880,288,960,277.3C1040,267,1120,245,1200,208C1280,171,1360,117,1400,90.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg>
+
+    <div class="grid grid-cols-2 bg-[#5000ca] pl-20 pb-10">
+      <div>
+        <h4 class="font-bold text-lg text-white">Rentahouse</h4>
+        <span class="text-white">Address 12521, S1r1222</span>
+        <br>
+        <span class="text-white">Chile, LA</span>
+        <div class="flex gap-6 mt-5 mb-5">
+          <a class="flex gap-2 bg-gray-900 p-3 text-white w-64 rounded-md cursor-pointer hover:scale-110 duration-150">
+            <img src="./assets/playstore.png" alt="Play store" class="w-8">
+            <p class="text-sm">GET IN ON<br> <span class="text-xl">Google Play</span></p>
+          </a>
+          <a class="flex gap-2 bg-gray-900 p-3 text-white w-64 rounded-md cursor-pointer hover:scale-110 duration-150">
+            <img src="./assets/appstore.png" alt="App Store" class="w-8">
+            <p class="text-sm">Download on the<br> <span class="text-xl">AppStore</span></p>
+          </a>
+        </div>
+        <a href="#" class="mr-5 text-white">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mr-5 text-white">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="mr-5 text-white">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="mr-5 text-white">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+      <div class="grid grid-cols-3 text-white pr-20">
+        <a href="#" class="footer-links-link">Principal</a>
+        <a href="#" class="footer-links-link">Home</a>
+        <a href="#" class="footer-links-link">Proceso</a>
+        <a href="#" class="footer-links-link">Recomendados</a>
+        <a href="#" class="footer-links-link">App</a>
+        <a href="#" class="footer-links-link">Reseñas</a>
+        <a href="#" class="footer-links-link">Suscribirse</a>
+        <a href="#" class="footer-links-link">Categorías</a>
+        <a href="#" class="footer-links-link">Casas</a>
+        <a href="#" class="footer-links-link">Apartamentos</a>
+        <a href="#" class="footer-links-link">Casa de campo</a>
+        <a href="#" class="footer-links-link">Habitación</a>
+        <a href="#" class="footer-links-link">Penthouse</a>
+        <a href="#" class="footer-links-link">Plataforma</a>
+        <a href="#" class="footer-links-link">Iniciar sesión</a>
+        <a href="#" class="footer-links-link">Registrarse</a>
+        <a href="#" class="footer-links-link">Términos y condiciones</a>
+        <a href="#" class="footer-links-link">Política de privacidad</a>
+        <a href="#" class="footer-links-link">Aviso legal</a>
+      </div>
+    </div>    
+  </footer>
 
   <script src="https://kit.fontawesome.com/723d9a1fa7.js" crossorigin="anonymous"></script>
 </body>
