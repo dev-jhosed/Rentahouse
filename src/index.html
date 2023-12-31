@@ -8,6 +8,41 @@
   <title>RentaHouse</title>
 </head>
 <body class="min-h-screen">
+  
+
+  <section id="Login-section" class="hidden grid grid-cols-2 px-36 py-20 fixed w-screen h-screen z-10 backdrop-blur-sm">
+    <div class="flex flex-col bg-gradient-to-t from-blue-800 to-gray-200 h-full w-full overflow-hidden rounded-l-xl text-center">
+      <img src="./assets/img_7.png" class="m-auto"/>
+      <h3 class="text-lg font-semibold text-white mb-2">La mejor plataforma de internet</h3>
+      <p class="text-white max-w-[360px] mx-auto">Alquila diferentes tipos de inmuebles alrededor de tu ubicación raíz, regístrate ahora</p>
+      <button class="py-4 px-16 bg-white rounded-md mx-auto mt-5 mb-12">Crear una cuenta</button>
+    </div>
+    <article class="bg-white w-full overflow-hidden rounded-r-xl py-11 px-8">
+      <div class="flex justify-between"><h1 class="text-xl font-light mb-4">Bienvenidos a <strong>Rentahouse</strong></h1>
+      <i id="use" class="fa-solid fa-xmark cursor-pointer"></i></div>
+      <span class="font-light">No tienes una cuenta</span><a class="text-blue-900 ml-5">Regístrate</a>
+      <div class="grid grid-cols-2 my-3 gap-3">
+        <button class="flex cursor-pointer items-center border border-gray-300 border-solid px-6 py-4 gap-2"><img class="w-7" src="./assets/Google.png" alt="Google">Iniciar con Google</button>
+        <button class="flex cursor-pointer items-center border border-gray-300 border-solid px-6 py-4 gap-2"><img class="w-7" src="./assets/facebook.png" alt="Google">Iniciar con Google</button>
+      </div>
+      <hr>
+      <h3 class="font-semibold mt-4">Dirección Email</h3>
+      <form method="POST">
+        <input type="text" name="email" class="bg-transparent border border-gray-300 border-solid w-full px-4 py-4 mt-2" placeholder="Ejemplo@gmail.com">
+        <h3 class="font-semibold mt-4">Contraseña</h3>
+        <input type="password" name="password" class="bg-transparent border border-gray-300 border-solid w-full px-4 py-4 mt-2 text-start" placeholder="Ejemplo@gmail.com">
+        <div class="flex justify-between mt-3 mb-2">
+          <p>
+            <input class="w-8 bg-white border border-gray-300 border-solid" type="checkbox"/>
+            Recordar mi contraseña
+          </p>
+          <a class="text-blue-900">¿Olvido su contraseña?</a>
+        </div>
+        <button class="w-full bg-violet-600 py-5">Ingresar</button>
+      </form>
+    </article>
+  </section>
+
   <main class="px-20">
     <!--Navbar-->
     <nav class="flex w-full h-24 justify-between items-center">
@@ -28,7 +63,7 @@
           <a href="#announcement">Anuncios</a>
         </li>
         <li>
-          <a href="/login" class="border border-violet-400 rounded-3xl py-4 px-16 bg-gray-100 text-violet-500">Login</a>
+          <a href="#" id="log" class="border border-violet-400 rounded-3xl py-4 px-16 bg-gray-100 text-violet-500">Login</a>
         </li>
       </div>
     </nav>
@@ -38,7 +73,7 @@
       <div class="max-w-sm">
         <h2 class="text-3xl mb-5 max-w-80">Renta con nosotros y Valora tu mismo</h2>
         <p class="mb-5">Más de 1000 sitios disponibles en este momento, <a href="#" class="text-blue-900">visitalos!</a></p>
-        <article class="flex flex-col w-max h-48 justify-around w-xl shadow-xl border rounded-lg p-7">
+        <article class="flex flex-col w-max h-48 justify-around w-xl shadow-lg border rounded-lg p-7">
           <div class="flex gap-4">
             <span>Dónde buscar</span>
             <span>Fecha de alquiler</span>
@@ -237,5 +272,6 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/723d9a1fa7.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
